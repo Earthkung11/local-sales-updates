@@ -1,2 +1,36 @@
-# local-sales-updates
-Official Windows update packages and release notes for Local sales POS.
+# Local sales POS
+
+แพ็กเกจติดตั้งและอัปเดตอย่างเป็นทางการสำหรับ Local sales บน Windows 64-bit
+
+## รุ่นปัจจุบัน: 1.001.001
+
+เริ่มเลขรุ่นชุดใหม่จากโค้ดล่าสุด **0.101.018** รวมปุ่ม **เปิดจอลูกค้า / ย่อจอลูกค้า / ปิดจอลูกค้า** ที่ด้านบนหน้าหลัก ใช้ได้ทั้งก่อนและหลังล็อกอิน เปิดกลับแล้วรายการขายและ QR ยังอยู่ครบ
+
+[ดู Release ล่าสุด](https://github.com/Earthkung11/local-sales-updates/releases/latest)
+
+| การใช้งาน | ไฟล์ดาวน์โหลด |
+| --- | --- |
+| ติดตั้งโปรแกรม | [Local-sales-1.001.001-Setup-win-x64.exe](https://github.com/Earthkung11/local-sales-updates/releases/download/v1.001.001/Local-sales-1.001.001-Setup-win-x64.exe) |
+| อัปเดตโปรแกรมเดิม | [Local-sales-1.001.001-system-update-win-x64.zip](https://github.com/Earthkung11/local-sales-updates/releases/download/v1.001.001/Local-sales-1.001.001-system-update-win-x64.zip) |
+
+ตัวติดตั้งมีภาษาไทย .NET, PostgreSQL และ runtime ที่จำเป็นในตัว เลือกโฟลเดอร์และสร้างทางลัดได้
+
+สำหรับเครื่องเดิม ให้จบหรือพักบิลและบันทึกการตั้งค่า แล้วใช้ **ตั้งค่า → ตรวจสอบอัปเดต → ติดตั้งอัปเดต** ในโปรแกรม หรือแตก ZIP อัปเดตในโฟลเดอร์แยก เปิด `อัปเดตโปรแกรม.cmd` และเลือกโฟลเดอร์โปรแกรมเดิม ตัวอัปเดตคงข้อมูลร้านและการตั้งค่าเดิม
+
+ถ้าติดตั้งทับด้วย Setup ให้ปิด Local sales และเลือกโฟลเดอร์เดิม ข้อมูลร้านอยู่ที่ `%LOCALAPPDATA%\SabaiPOS` ควรสำรองก่อนติดตั้งทับ
+
+## รูปแบบเลขรุ่น
+
+- เริ่มชุดใหม่ที่ **1.001.001** จากรุ่นล่าสุด **0.101.018**
+- รุ่นถัดไปใช้ **1.001.002**, **1.001.003** ตามลำดับ
+- Tag ใช้ `v1.001.001` และเลขรุ่นในโปรแกรม ชื่อไฟล์ Release กับ `latest.json` ต้องตรงกัน
+- โปรแกรมรุ่น `0.101.xxx` อัปเดตเข้าสู่ชุด `1.001.xxx` จาก repository นี้ได้
+- Release รุ่นก่อนหน้ายังอยู่ในประวัติ สำหรับตรวจสอบและกู้คืน
+
+## ไฟล์ในแต่ละ Release
+
+`Setup-win-x64.exe` สำหรับติดตั้ง, `system-update-win-x64.zip` สำหรับอัปเดต, ไฟล์ `.sha256` สำหรับตรวจสอบ และ `latest.json` สำหรับโปรแกรมตรวจและดาวน์โหลดอัปเดต
+
+ข้อมูลรุ่นล่าสุด: [latest.json](https://github.com/Earthkung11/local-sales-updates/releases/latest/download/latest.json)
+
+Repository นี้เก็บแพ็กเกจแจกจ่ายและเอกสารรุ่น ไม่มีข้อมูลสินค้า ยอดขาย ลูกค้า หรือฐานข้อมูลร้าน
