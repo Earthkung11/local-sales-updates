@@ -2,16 +2,16 @@
 
 แพ็กเกจติดตั้งและอัปเดตสำหรับ Windows 64-bit
 
-## รุ่นปัจจุบัน: 1.001.015
+## รุ่นปัจจุบัน: 1.001.016
 
 [ดู Release ล่าสุด](https://github.com/Earthkung11/local-sales-updates/releases/latest)
 
 | การใช้งาน | ดาวน์โหลด |
 | --- | --- |
-| ติดตั้งโปรแกรม | [Local-sales-1.001.015-Setup-win-x64.exe](https://github.com/Earthkung11/local-sales-updates/releases/download/v1.001.015/Local-sales-1.001.015-Setup-win-x64.exe) |
-| อัปเดตเครื่องเดิม | [Local-sales-1.001.015-system-update-win-x64.zip](https://github.com/Earthkung11/local-sales-updates/releases/download/v1.001.015/Local-sales-1.001.015-system-update-win-x64.zip) |
+| ติดตั้งโปรแกรม | [Local-sales-1.001.016-Setup-win-x64.exe](https://github.com/Earthkung11/local-sales-updates/releases/download/v1.001.016/Local-sales-1.001.016-Setup-win-x64.exe) |
+| อัปเดตเครื่องเดิม | [Local-sales-1.001.016-system-update-win-x64.zip](https://github.com/Earthkung11/local-sales-updates/releases/download/v1.001.016/Local-sales-1.001.016-system-update-win-x64.zip) |
 
-รุ่นนี้แก้ข้อผิดพลาด AuditedConfigurationWriter ของบริการพิมพ์ในโหมด API ให้เปิดหน้าขายและตัวอย่างพิมพ์ได้ บริการพิมพ์ในโหมด API ไม่ต้องใช้ฐานข้อมูลในเครื่อง
+รุ่นนี้เพิ่มการ์ดรูปสินค้าในหน้าขาย Windows พร้อมหมวดหมู่ ชื่อ เจ้าของ/แหล่งที่มา ราคา สต็อก และปุ่ม “+” เพิ่มลงบิล กดซ้ำเพื่อเพิ่มจำนวน ใช้รูปสินค้าเดิมบนเว็บ local4 ค้นหาและกรองหมวดหมู่ได้ มีการแบ่งหน้า ปุ่มโหลดใหม่ และภาพแทนเมื่อไม่มีรูป สินค้าหมดหรือปิดการขายจะเพิ่มไม่ได้ หลังชำระสำเร็จโหลดสต็อกใหม่ ช่องสแกนบาร์โค้ดและปุ่มชำระเงินยังอยู่ในหน้าเดียวกัน
 
 ## เชื่อม local4 ผ่าน API
 
@@ -43,10 +43,10 @@ Setup เริ่มต้นที่ **C:\Program Files\Local sales** แล�
 
 ## เลขรุ่นและไฟล์เผยแพร่
 
-เริ่มเลขรุ่นใหม่จาก **1.001.001** ตามโค้ดล่าสุด 0.101.018 รุ่นปัจจุบัน **1.001.015** และรุ่นถัดไป **1.001.016** รุ่น 0.101.xxx อัปเดตเข้าสู่ชุด 1.001.xxx ได้ ประวัติ Release ก่อนหน้ายังคงอยู่
+เริ่มเลขรุ่นใหม่จาก **1.001.001** ตามโค้ดล่าสุด 0.101.018 รุ่นปัจจุบัน **1.001.016** และรุ่นถัดไป **1.001.017** รุ่น 0.101.xxx อัปเดตเข้าสู่ชุด 1.001.xxx ได้ ประวัติ Release ก่อนหน้ายังคงอยู่
 
 ทุก Release มี Setup, ZIP อัปเดต, SHA-256 ของทั้งสองไฟล์ และ [latest.json](https://github.com/Earthkung11/local-sales-updates/releases/latest/download/latest.json) รวม 5 ไฟล์ ชื่อ Tag เลขในโปรแกรมและ manifest ต้องตรงกัน
 
-ผ่านการทดสอบ Windows 494 รายการ รวม API ของ Laravel จริงบนฐานแยก และ API ที่เปลี่ยน 10 รายการ พร้อมชุดอัปโหลดเซิร์ฟเวอร์ 3 รายการ ตรวจหน้าจอ WPF ชุดอัปเดตและวงจรติดตั้งด้วยข้อมูลทดสอบ ยังไม่ได้ทดสอบการขายบน local4 จริงหรือเครื่องพิมพ์จริง
+ผ่านการทดสอบ Windows 507 รายการ รวม API ของ Laravel จริงบนฐานแยก ใช้ Desktop API รุ่น 1.001.014 เดิมบนเซิร์ฟเวอร์ได้ ตรวจหน้าจอ WPF ชุดอัปเดตและวงจรติดตั้งด้วยข้อมูลทดสอบ ยังไม่ได้ทดสอบการขายบน local4 จริงหรือเครื่องพิมพ์จริง
 
 Repository นี้เก็บแพ็กเกจแจกจ่ายและเอกสารรุ่น ไม่มี source ของร้าน สินค้า ยอดขาย ลูกค้า ฐานข้อมูล หรือรหัสผ่านร้าน
